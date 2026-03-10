@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url("https://unpkg.com/@solar-icons/css@latest/css/solar-icons-bold-duotone.css");
+
+/* 1. Déclaration de la police */
+@font-face {
+  font-family: 'Widdershins';
+  src: url('/fonts/Widdershins DEMO.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. Configuration du thème Tailwind v4 */
+@theme {
+  --font-widdershins: "Widdershins", sans-serif;
+  --color-ui-bg: #2A2A2A;
+  --color-ui-text: #FFFFFF;
+}
+
+/* 3. Global Reset */
+:root {
+  background-color: #000;
+  color: var(--color-ui-text);
+  font-family: var(--font-widdershins);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Empêche le scroll sur toute la page */
+}
