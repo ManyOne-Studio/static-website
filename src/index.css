@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url("https://unpkg.com/@solar-icons/css@latest/css/solar-icons-bold-duotone.css");
+@import "video.js/dist/video-js.css";
 
 /* 1. Déclaration de la police */
 @font-face {
@@ -28,3 +29,4 @@ body {
   padding: 0;
   overflow: hidden; /* Empêche le scroll sur toute la page */
 }
+

@@ -1,5 +1,5 @@
 export const data = {
-  title: "67",
+  title: "MAIIIS NAAHNNNN YUUUKIIII",
   date: "2026-03-10",
   slug: "structure-du-shader", // Pour l'URL
   tags: ["Threejs", "GLSL"],
