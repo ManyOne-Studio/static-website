@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import BackgroundScene from './components/canva/BackgroundScene';
 
 // Imports des composants
 import Navigation from './components/Navigation';
 import DevlogList from './components/DevlogList';
 import DevlogDetail from './components/DevlogDetail';
+import Team from './components/Team';
 
 function MainContent() {
   const location = useLocation();
@@ -32,10 +34,10 @@ function MainContent() {
         {/* --- LE FOND FIXE (Ne bouge jamais) --- */}
         <div className="absolute inset-0 z-0">
           {/* SLOT CANVAS THREE.JS */}
-          <div className="absolute inset-0 bg-neutral-900 flex items-center justify-center text-white/5 uppercase tracking-[2em] pointer-events-none text-xs">
-            [ Canvas Three.js Slot ]
+          <div className="absolute inset-0 bg-neutral-900 flex items-center justify-center text-white/5 uppercase tracking-[2em] pointer-events-none text-xs z-0">
+          <BackgroundScene /> 
+          <div className="grainOverlay" />
           </div>
-
           {/* LOGO CENTRAL FIXE */}
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center px-4">
             <h1 className="text-[10rem] font-black italic tracking-tighter leading-none uppercase">MANYONE</h1>
@@ -58,9 +60,12 @@ function MainContent() {
               {/* Correction : Route par défaut pour éviter l'erreur de console */}
               {/* Ici on redirige vers /devlog pour que l'utilisateur voie du contenu direct */}
               <Route path="/" element={<div className="h-full w-full" />} />  
-                          
+                           
               <Route path="/devlog" element={<DevlogList allLogs={allDevlogs} lang={lang} />} />
               <Route path="/devlog/:date/:slug" element={<DevlogDetail allLogs={allDevlogs} lang={lang} />} />
+              
+              {/* ROUTE TEAM AJOUTÉE ICI */}
+              <Route path="/team" element={<Team lang={lang} />} />
             </Routes>
           </AnimatePresence>
         </div>
