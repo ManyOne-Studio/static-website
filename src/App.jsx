@@ -25,7 +25,8 @@ function MainContent() {
 
   return (
     <div className="relative h-screen w-screen bg-black flex text-ui-text font-widdershins overflow-hidden">
-      
+                <div className="grainOverlay" />
+
       {/* 1. LES NAVBARS (Toujours au-dessus) */}
       <Navigation lang={lang} setLang={setLang} />
 
@@ -36,14 +37,26 @@ function MainContent() {
           {/* SLOT CANVAS THREE.JS */}
           <div className="absolute inset-0 bg-neutral-900 flex items-center justify-center text-white/5 uppercase tracking-[2em] pointer-events-none text-xs z-0">
           <BackgroundScene /> 
-          <div className="grainOverlay" />
           </div>
           {/* LOGO CENTRAL FIXE */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center px-4">
-            <h1 className="text-[10rem] font-black italic tracking-tighter leading-none uppercase">MANYONE</h1>
-            <p className="text-sm tracking-[1.5em] opacity-40 uppercase">
-              Digital Craftsmanship
-            </p>
+          <div className="absolute inset-0 flex items-center justify-center ">
+            <video
+              src="/test.mp4" // Mets ta vidéo dans le dossier public
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-[700px] h-auto" // Ajuste la taille (w-)
+              style={{ mixBlendMode: 'screen' }} // Le mode de fusion pour "éclaircir"
+            />
+            {/*
+            <img 
+                src="/logo_v3.png" // Assure-toi que ton logo est dans le dossier public
+                alt="MANYONE Logo"
+                className="w-[900px] h-auto opacity-90" // Ajuste la taille (w-) selon tes besoins
+                style={{ mixBlendMode: 'screen' }} // Le mode de fusion "Éclaircir"
+              />
+              */}
           </div>
 
           {/* TEXTE FIXE BAS DROITE */}

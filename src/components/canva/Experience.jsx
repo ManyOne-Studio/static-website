@@ -43,7 +43,11 @@ export const Experience = (props) => {
       
       <Sky 
         distance={450000} 
-        sunPosition={[0, 0, 0]} 
+        sunPosition={[100, -0.02, -100]}
+        mieCoefficient={0.005} // Gère la clarté de l'air
+        mieDirectionalG={0.8}  // Gère la diffusion autour du soleil
+        rayleigh={3}           // Gère la couleur du ciel (plus haut = plus de bleu/rouge)
+        turbidity={10}         // Gère l'aspect "brumeux" de l'horizon 
         inclination={0} 
         azimuth={0.25} 
       />

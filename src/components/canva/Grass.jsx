@@ -6,7 +6,7 @@ import { shaderMaterial } from '@react-three/drei'
 const GrassMaterial = shaderMaterial(
     {
         color1: new THREE.Color('#a1ae3e'),
-        color2: new THREE.Color('#d4dba8'),
+        color2: new THREE.Color('#d9e587'),
         uCameraPosition: new THREE.Vector3(),
         uTime: 0,
         uNight: 1.0, // 1.0 = jour, 0.1 = nuit

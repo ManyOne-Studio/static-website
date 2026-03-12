@@ -22,15 +22,15 @@ export default function Navigation({ lang, setLang }) {
       {/* BOUTON BURGER (Mobile) */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-6 right-6 z-[100] md:hidden bg-ui-bg p-3 rounded-xl border border-white/5 text-white"
+        className="fixed top-6 right-6 z-[100] md:hidden   text-white"
       >
         {isOpen ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-            <path d="M18 6L6 18M6 6l12 12" />
-          </svg>
+        <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.86865 1.86868C3.10954 2.81446 4.29354 3.87757 5.56732 5.00557C6.88996 6.17685 9.7922 8.43046 13.3086 11.8278C17.1234 15.5133 19.2286 18.0429 20.1424 19.2216C23.0627 22.9884 24.2046 24.0873 25.4491 24.9176C25.7477 25.0971 25.9824 25.2144 26.2206 25.3335L27.2909 25.8687M29.2464 2.40201C27.8295 2.81446 26.4642 3.4669 23.4384 5.93357C20.6748 8.18652 15.5433 12.6242 12.7371 14.9789C8.86387 18.2289 7.3833 19.6998 6.34686 20.7682C5.20121 21.9493 4.71664 23.3158 3.85708 24.2358C3.47219 24.6207 3.05619 24.8607 2.61263 25.0376C2.40374 25.1558 2.22775 25.3318 2.04642 25.5131" stroke="white" stroke-width="3.73715" stroke-linecap="round"/>
+        </svg>
         ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-            <path d="M4 6h16M4 12h16M4 18h16" />
+          <svg width="39" height="28" viewBox="0 0 39 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00043 5.68865C2.2965 5.0935 3.68718 4.0976 5.78067 2.85196C6.60876 2.35926 7.57809 2.30018 11.7307 2.15065C22.193 1.77389 29.6107 2.1985 30.4062 2.39738C32.1019 2.79664 33.4986 3.09571 34.3435 3.34394C34.7936 3.49347 35.287 3.69086 36.3936 4.1933M4.0939 14.9599C7.65286 14.9599 14.355 15.0586 18.4613 15.2081C21.8767 15.2589 27.9957 15.2589 31.3453 15.3576C34.6949 15.4563 35.0896 15.6537 35.7954 15.8571M4.69207 23.3338C5.38591 23.4325 6.97696 24.0277 8.87157 24.7769C10.8642 25.5648 13.3532 25.4273 15.2029 25.6756C16.1465 25.7264 17.1484 25.8251 20.314 25.9746C22.9862 26.0255 27.8222 26.0255 33.702 25.7264" stroke="white" stroke-width="4" stroke-linecap="round"/>
           </svg>
         )}
       </button>
@@ -61,11 +61,10 @@ export default function Navigation({ lang, setLang }) {
         <div className="flex flex-col gap-1">
           {/* youtube*/}
           <a href="" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-lg text-white/30 hover:text-accent hover:bg-white/5 transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"/></svg>
-          </a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476zM9.999 8.5v7l6-3.5z"/></svg>          </a>
           {/* insta*/}
           <a href="" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-lg text-white/30 hover:text-accent hover:bg-white/5 transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 8.245V15.5a6.5 6.5 0 1 1-5-6.326v3.163a3.5 3.5 0 1 0 2 3.163V2h3a5 5 0 0 0 5 5v3a7.97 7.97 0 0 1-5-1.755"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"/></svg>
           </a>
           {/* tiktok*/}
           <a href="" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-lg text-white/30 hover:text-accent hover:bg-white/5 transition-all duration-300">
@@ -73,15 +72,15 @@ export default function Navigation({ lang, setLang }) {
           </a>          
           {/* bluesky*/}
           <a href="" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-lg text-white/30 hover:text-accent hover:bg-white/5 transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 8.245V15.5a6.5 6.5 0 1 1-5-6.326v3.163a3.5 3.5 0 1 0 2 3.163V2h3a5 5 0 0 0 5 5v3a7.97 7.97 0 0 1-5-1.755"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.388c-.906-1.761-3.372-5.044-5.665-6.662c-2.197-1.55-3.034-1.283-3.583-1.033C2.116 3.978 2 4.955 2 5.528c0 .575.315 4.709.52 5.4c.68 2.28 3.094 3.05 5.32 2.803c-3.26.483-6.157 1.67-2.36 5.898c4.178 4.325 5.726-.927 6.52-3.59c.794 2.663 1.708 7.726 6.444 3.59c3.556-3.59.977-5.415-2.283-5.898c2.225.247 4.64-.523 5.319-2.803c.205-.69.52-4.825.52-5.399c0-.575-.116-1.55-.752-1.838c-.549-.248-1.386-.517-3.583 1.033c-2.293 1.621-4.76 4.904-5.665 6.664"/></svg>
           </a>          
           {/* reddit*/}
           <a href="" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-lg text-white/30 hover:text-accent hover:bg-white/5 transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 8.245V15.5a6.5 6.5 0 1 1-5-6.326v3.163a3.5 3.5 0 1 0 2 3.163V2h3a5 5 0 0 0 5 5v3a7.97 7.97 0 0 1-5-1.755"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 22c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10m6.67-10a1.46 1.46 0 0 0-2.47-1a7.1 7.1 0 0 0-3.85-1.23l.65-3.12l2.14.45a1 1 0 1 0 .13-.61L12.821 6a.31.31 0 0 0-.37.24l-.74 3.47a7.14 7.14 0 0 0-3.9 1.23a1.46 1.46 0 1 0-1.61 2.39a3 3 0 0 0 0 .44c0 2.24 2.61 4.06 5.83 4.06s5.83-1.82 5.83-4.06a3 3 0 0 0 0-.44a1.46 1.46 0 0 0 .81-1.33m-10 1a1 1 0 1 1 2 0a1 1 0 0 1-2 0m5.81 2.75a3.84 3.84 0 0 1-2.47.77a3.84 3.84 0 0 1-2.47-.77a.27.27 0 0 1 .38-.38a3.27 3.27 0 0 0 2.08.63a3.28 3.28 0 0 0 2.09-.61a.28.28 0 1 1 .39.4zm-.18-1.71a1 1 0 1 1 1-1a1 1 0 0 1-1.01 1.04z"/></svg>
           </a>          
           {/* linkedin*/}
           <a href="" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-lg text-white/30 hover:text-accent hover:bg-white/5 transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 8.245V15.5a6.5 6.5 0 1 1-5-6.326v3.163a3.5 3.5 0 1 0 2 3.163V2h3a5 5 0 0 0 5 5v3a7.97 7.97 0 0 1-5-1.755"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/></svg>
           </a>          
         </div>
 
