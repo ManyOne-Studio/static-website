@@ -39,7 +39,9 @@ function MainContent() {
           <BackgroundScene /> 
           </div>
           {/* LOGO CENTRAL FIXE */}
-          <div className="absolute inset-0 flex items-center justify-center ">
+          <div className="absolute inset-0 flex items-center justify-center text-[80px]">
+            MANYONE STUDIO
+            {/*
             <video
               src="/test.mp4" // Mets ta vidéo dans le dossier public
               autoPlay
@@ -49,7 +51,6 @@ function MainContent() {
               className="w-[700px] h-auto" // Ajuste la taille (w-)
               style={{ mixBlendMode: 'screen' }} // Le mode de fusion pour "éclaircir"
             />
-            {/*
             <img 
                 src="/logo_v3.png" // Assure-toi que ton logo est dans le dossier public
                 alt="MANYONE Logo"
