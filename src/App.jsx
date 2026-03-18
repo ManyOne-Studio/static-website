@@ -40,7 +40,12 @@ function MainContent() {
           </div>
           {/* LOGO CENTRAL FIXE */}
           <div className="absolute inset-0 flex items-center justify-center text-[80px]">
-            MANYONE STUDIO
+             <img
+              src="/img/logo_white.svg"
+              alt="Manyone Studio"
+              className="w-[500px] h-auto"
+              style={{ mixBlendMode: 'screen' }}
+            />
             {/*
             <video
               src="/test.mp4" // Mets ta vidéo dans le dossier public
@@ -58,6 +63,7 @@ function MainContent() {
                 style={{ mixBlendMode: 'screen' }} // Le mode de fusion "Éclaircir"
               />
               */}
+          
           </div>
 
           {/* TEXTE FIXE BAS DROITE */}
