@@ -31,7 +31,7 @@ export default function DevlogDetail({ allLogs, lang }) {
         <div className="flex-1 bg-ui-bg rounded-3xl p-6 overflow-y-auto md:overflow-hidden pointer-events-auto flex flex-col md:flex-row gap-6 scrollbar-hide">
           
           {/* VIDEO STICKY */}
-          <div className="w-full md:w-1/3 md:sticky md:top-0 h-fit shrink-0">
+          {/* <div className="w-full md:w-1/3 md:sticky md:top-0 h-fit shrink-0">
             <div className="video-player-wrapper aspect-[9/16] bg-black rounded-xl overflow-hidden border border-white/10">
               <video 
                 src={log.video} 
@@ -39,7 +39,7 @@ export default function DevlogDetail({ allLogs, lang }) {
                 className="w-full h-full object-contain bg-black" 
               />
             </div>
-          </div>
+          </div> */}
 
           {/* TEXTE SCROLLABLE */}
           <div className="flex-1 md:overflow-y-auto md:pr-4 scrollbar-hide flex flex-col gap-[24px]">

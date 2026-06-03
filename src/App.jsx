@@ -41,7 +41,7 @@ function MainContent() {
           {/* LOGO CENTRAL FIXE */}
           <div className="absolute inset-0 flex items-center justify-center text-[80px]">
              <img
-              src="/img/logo_white.svg"
+              src="/img/logo_white.png"
               alt="Manyone Studio"
               className="w-[500px] h-auto"
               style={{ mixBlendMode: 'screen' }}
